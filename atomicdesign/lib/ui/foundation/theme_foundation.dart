@@ -7,15 +7,20 @@ final basicLightThemeFoundation = ThemeData(
   brightness: Brightness.light,
   colorSchemeSeed: ColorsFoundation.basicLightThemeSchemaSeed,
   textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.all(ColorsFoundation.basicLightButtonBackground),
-    textStyle:
-        MaterialStateProperty.all(const TextStyle(fontWeight: FontWeight.bold)),
-    shape: MaterialStateProperty.all(
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
-    minimumSize: MaterialStateProperty.all(const Size(SizeFoundation.basicTextButtonWidth, SizeFoundation.basicTextButtonHeight)),
-    foregroundColor: MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
-  )),
+    style: ButtonStyle(
+      backgroundColor: MaterialStateProperty.all(
+          ColorsFoundation.basicLightButtonBackground),
+      textStyle: MaterialStateProperty.all(
+          const TextStyle(fontWeight: FontWeight.bold)),
+      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
+      minimumSize: MaterialStateProperty.all(const Size(
+          SizeFoundation.basicTextButtonWidth,
+          SizeFoundation.basicTextButtonHeight)),
+      foregroundColor:
+          MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
+    ),
+  ),
 );
 
 final basicDarkThemeFoundation = ThemeData(
@@ -23,12 +28,16 @@ final basicDarkThemeFoundation = ThemeData(
   colorSchemeSeed: ColorsFoundation.basicLightThemeSchemaSeed,
   textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.all(ColorsFoundation.basicLightButtonBackground),
+    backgroundColor:
+        MaterialStateProperty.all(ColorsFoundation.basicLightButtonBackground),
     textStyle:
         MaterialStateProperty.all(const TextStyle(fontWeight: FontWeight.bold)),
-    shape: MaterialStateProperty.all(
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
-    minimumSize: MaterialStateProperty.all(const Size(SizeFoundation.basicTextButtonWidth, SizeFoundation.basicTextButtonHeight)),
-    foregroundColor: MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
+    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
+    minimumSize: MaterialStateProperty.all(const Size(
+        SizeFoundation.basicTextButtonWidth,
+        SizeFoundation.basicTextButtonHeight)),
+    foregroundColor:
+        MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
   )),
 );

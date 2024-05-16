@@ -1,5 +1,8 @@
+import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_atom.dart';
+import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_input_type.dart';
 import 'package:atomicdesign/ui/atom/text_button_atom.dart';
 import 'package:atomicdesign/ui/foundation/theme_foundation.dart';
+import 'package:atomicdesign/ui/molecule/card_tile_molecule.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +17,23 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: basicLightThemeFoundation,
       darkTheme: basicDarkThemeFoundation,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       home: Scaffold(
         body: Center(
-          child: TextButtonAtom(textButton: 'Push me',onPressedButton: () {},),
+          child: Column(
+            children: [
+              const CardTileMolecule(title: 'Titulo del widget',),
+              EditFieldAtom(
+                  name: 'Nombre:',
+                  strValue: 'Pepito',
+                  type: EditFieldInputType.stringShortType,
+                  onChanged: (value) {}),
+              TextButtonAtom(
+                textButton: 'Push me',
+                onPressedButton: () {},
+              )
+            ],
+          ),
         ),
       ),
     );

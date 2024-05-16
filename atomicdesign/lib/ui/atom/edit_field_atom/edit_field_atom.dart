@@ -1,0 +1,114 @@
+import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_input_type.dart';
+import 'package:atomicdesign/ui/foundation/size_foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+class EditFieldAtom extends StatefulWidget {
+  final Function (String) onChanged;
+  final String name;
+  final String strValue;
+  final EditFieldInputType type;
+
+
+  const EditFieldAtom({required this.name,required this.strValue,required this.type,required this.onChanged, super.key});
+
+  @override
+  State<EditFieldAtom> createState() => _EditFieldAtomState();
+}
+
+class _EditFieldAtomState extends State<EditFieldAtom> {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.topCenter,
+      padding: const EdgeInsets.all(SizeFoundation.basicEditFieldInset),
+      child: SizedBox(
+        width: SizeFoundation.basicEditFieldWidth,
+        height: SizeFoundation.basicEditFieldHeight,
+        child: TextFormField(
+          initialValue: widget.strValue,
+          validator:(value) => validate(value,widget.type),
+          onChanged: (String value)=> widget.onChanged(value),
+          obscureText: false,
+          keyboardType: getKeyboard(widget.type),
+          inputFormatters: getInputFormater(widget.type), 
+          decoration: InputDecoration(
+            border: const OutlineInputBorder(),
+            labelText: widget.name,
+          ),
+        ),
+      ),
+    );
+  }
+
+  TextInputType getKeyboard(EditFieldInputType type) => switch(type){
+    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType  => TextInputType.text,
+    EditFieldInputType.doubleType || EditFieldInputType.intType  => TextInputType.number,
+  };
+
+  List<TextInputFormatter> getInputFormater(EditFieldInputType type) => switch(type){
+    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType  => [FilteringTextInputFormatter.singleLineFormatter ],
+    EditFieldInputType.doubleType => [FilteringTextInputFormatter.allow((RegExp("[.0-9]"))) ],
+    EditFieldInputType.intType => [FilteringTextInputFormatter.allow((RegExp("[0-9]"))) ],
+  };
+
+  String? validate(String? value,EditFieldInputType type) => switch(type){
+    EditFieldInputType.stringShortType => checkStringShort(value,type),
+    EditFieldInputType.stringLongType => checkStringLong(value,type),
+    EditFieldInputType.doubleType => checkDouble(value, type),
+    EditFieldInputType.intType => checkInt(value, type),
+  };
+
+  String? checkStringShort(String? value,EditFieldInputType type){
+    if(value == null || value.isEmpty ){
+      return "Entre un valor";
+    }else if(value.length > 15){
+      return "Debe tener máximo 15 caracteres";
+    }else{
+      return null;
+    }
+  }
+
+    String? checkStringLong(String? value,EditFieldInputType type){
+    if(value == null || value.isEmpty ){
+      return "Entre un valor";
+    }else if(value.length > 100){
+      return "Debe tener máximo 100 caracteres";
+    }else{
+      return null;
+    }
+  }
+
+  String? checkDouble(String? value,EditFieldInputType type){
+    if(value == null || value.isEmpty){
+      return "Entre un valor";
+    }else if(value.length > 10){
+        return "Debe tener máximo 10 dígitos";
+    }else{
+      try{
+        double.parse(value);
+      }catch(error){
+        return "Entre un número válido !";
+      }
+      return null;
+    }
+  }
+
+    String? checkInt(String? value,EditFieldInputType type){
+    if(value == null || value.isEmpty){
+      return "Entre un valor";
+    }else if(value.length > 10){
+      return "Debe tener máximo 10 dígitos";
+    }else{
+      try{
+        int.parse(value);
+      }catch(error){
+          return "Entre una cantidad válida !";
+      }
+      return null;
+    }
+  }
+
+}

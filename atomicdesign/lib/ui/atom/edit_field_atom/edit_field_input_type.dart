@@ -1,0 +1,1 @@
+enum EditFieldInputType {stringShortType,stringLongType , doubleType, intType }

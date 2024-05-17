@@ -9,5 +9,8 @@ abstract class SizesToken {
   static const s25x2 = 50.0;
   static const s25x3 = 150.0;
   static const s25x4 = 200.0;
+  static const s25x5 = 225.0;
+  static const s25x6 = 250.0;
+
 
 }

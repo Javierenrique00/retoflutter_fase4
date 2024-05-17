@@ -14,5 +14,9 @@ abstract class SizeFoundation {
   static const basicCardTileHeight = SizesToken.s25x2;
   static const basicCardTileSpacer = SizesToken.s8x1;
 
+  static const basicLoginWidth = SizesToken.s25x6;
+  static const basicLoginHeightSpacer = SizesToken.s8x2;
+
+  static const basictemplateInsetBorder = SizesToken.s8x1;
 
 }

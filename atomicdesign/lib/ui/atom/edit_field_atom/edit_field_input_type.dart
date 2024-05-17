@@ -1,1 +1,1 @@
-enum EditFieldInputType {stringShortType,stringLongType , doubleType, intType }
+enum EditFieldInputType {stringShortType,stringLongType , doubleType, intType, pwdType }

@@ -31,7 +31,7 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
           initialValue: widget.strValue,
           validator:(value) => validate(value,widget.type),
           onChanged: (String value)=> widget.onChanged(value),
-          obscureText: false,
+          obscureText: getObscureForPwd(widget.type),
           keyboardType: getKeyboard(widget.type),
           inputFormatters: getInputFormater(widget.type), 
           decoration: InputDecoration(
@@ -43,13 +43,21 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
     );
   }
 
+  bool getObscureForPwd(EditFieldInputType type){
+    if(type == EditFieldInputType.pwdType){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   TextInputType getKeyboard(EditFieldInputType type) => switch(type){
-    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType  => TextInputType.text,
+    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType || EditFieldInputType.pwdType => TextInputType.text,
     EditFieldInputType.doubleType || EditFieldInputType.intType  => TextInputType.number,
   };
 
   List<TextInputFormatter> getInputFormater(EditFieldInputType type) => switch(type){
-    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType  => [FilteringTextInputFormatter.singleLineFormatter ],
+    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType || EditFieldInputType.pwdType => [FilteringTextInputFormatter.singleLineFormatter ],
     EditFieldInputType.doubleType => [FilteringTextInputFormatter.allow((RegExp("[.0-9]"))) ],
     EditFieldInputType.intType => [FilteringTextInputFormatter.allow((RegExp("[0-9]"))) ],
   };
@@ -59,6 +67,7 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
     EditFieldInputType.stringLongType => checkStringLong(value,type),
     EditFieldInputType.doubleType => checkDouble(value, type),
     EditFieldInputType.intType => checkInt(value, type),
+    EditFieldInputType.pwdType => checkStringShort(value,type),
   };
 
   String? checkStringShort(String? value,EditFieldInputType type){

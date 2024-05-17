@@ -6,28 +6,17 @@ import 'package:flutter/material.dart';
 final basicLightThemeFoundation = ThemeData(
   brightness: Brightness.light,
   colorSchemeSeed: ColorsFoundation.basicLightThemeSchemaSeed,
-  textButtonTheme: TextButtonThemeData(
-    style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(
-          ColorsFoundation.basicLightButtonBackground),
-      textStyle: MaterialStateProperty.all(
-          const TextStyle(fontWeight: FontWeight.bold)),
-      shape: MaterialStateProperty.all(RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
-      minimumSize: MaterialStateProperty.all(const Size(
-          SizeFoundation.basicTextButtonWidth,
-          SizeFoundation.basicTextButtonHeight)),
-      foregroundColor:
-          MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
-    ),
-  ),
+  textButtonTheme: textButtonWithBackgroundTheme,
 );
 
 final basicDarkThemeFoundation = ThemeData(
   brightness: Brightness.dark,
   colorSchemeSeed: ColorsFoundation.basicLightThemeSchemaSeed,
-  textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(
+  textButtonTheme: textButtonWithBackgroundTheme,
+);
+
+final textButtonWithBackgroundTheme = TextButtonThemeData(
+  style: ButtonStyle(
     backgroundColor:
         MaterialStateProperty.all(ColorsFoundation.basicLightButtonBackground),
     textStyle:
@@ -39,5 +28,21 @@ final basicDarkThemeFoundation = ThemeData(
         SizeFoundation.basicTextButtonHeight)),
     foregroundColor:
         MaterialStateProperty.all(ColorsFoundation.basicLightButtonText),
-  )),
+  ),
+);
+
+final textButtonWithoutBackgroundTheme = TextButtonThemeData(
+  style: ButtonStyle(
+    //backgroundColor: MaterialStateProperty.all(ColorsToken.black01),
+    textStyle: MaterialStateProperty.all(
+      const TextStyle(fontWeight: FontWeight.normal),
+    ),
+    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
+    minimumSize: MaterialStateProperty.all(const Size(
+        SizeFoundation.basicTextButtonWidth,
+        SizeFoundation.basicTextButtonHeight)),
+    foregroundColor:
+        MaterialStateProperty.all(ColorsFoundation.basicWoButtonText),
+  ),
 );

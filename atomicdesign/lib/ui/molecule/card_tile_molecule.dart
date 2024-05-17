@@ -12,8 +12,11 @@ class CardTileMolecule extends StatelessWidget {
       height: SizeFoundation.basicCardTileHeight,
       child: Card(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const FlutterLogo(),
+            const Icon(
+              Icons.rocket,
+            ),
             const SizedBox(
               width: SizeFoundation.basicCardTileSpacer,
             ),

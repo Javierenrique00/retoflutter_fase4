@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class CardTileMolecule extends StatelessWidget {
   final String title;
-  const CardTileMolecule({required this.title, super.key});
+  final Icon icon;
+  const CardTileMolecule({required this.title,required this.icon ,super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +15,7 @@ class CardTileMolecule extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.rocket,
-            ),
+            icon,
             const SizedBox(
               width: SizeFoundation.basicCardTileSpacer,
             ),

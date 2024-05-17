@@ -15,7 +15,7 @@ class LoginOrganism extends StatefulWidget {
 class _LoginOrganismState extends State<LoginOrganism> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: SizeFoundation.basicLoginWidth,
       child: Card(
         child: Column(

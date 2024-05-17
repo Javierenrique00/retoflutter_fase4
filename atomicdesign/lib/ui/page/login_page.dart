@@ -4,6 +4,10 @@ import 'package:atomicdesign/ui/template/basic_template.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+
+  /// LoginPage
+  /// 
+  /// This is a login page that use a basicTemplate and loginOrganism for login purposes.
   const LoginPage({super.key});
 
   @override

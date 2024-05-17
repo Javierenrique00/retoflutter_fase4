@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 
 class ShowcaseTemplate extends StatelessWidget {
   final List<Map<String, Widget>> widgetList;
+
+  /// ## ShowcaseTemplate
+  /// 
+  /// Is used in the Showcase example app for displaying all the atomic design components of the package.
   const ShowcaseTemplate({required this.widgetList, super.key});
 
   @override

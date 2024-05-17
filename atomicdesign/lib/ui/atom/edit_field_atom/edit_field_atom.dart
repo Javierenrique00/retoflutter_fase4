@@ -9,7 +9,21 @@ class EditFieldAtom extends StatefulWidget {
   final String strValue;
   final EditFieldInputType type;
 
-
+  /// ## EditFieldAtom
+  /// 
+  /// EditField that can validate data in a form
+  /// 
+  /// It supports a type for validation as follows:
+  /// 
+  /// - EditFieldInputType.stringShortType
+  /// - EditFieldInputType.stringLongType
+  /// - EditFieldInputType.doubleType
+  /// - EditFieldInputType.intType
+  /// - EditFieldInputType.pwdType
+  /// 
+  /// Parameter onChanged returns a String with the field entered.
+  /// 
+  /// For more information see Widget EditField
   const EditFieldAtom({required this.name,required this.strValue,required this.type,required this.onChanged, super.key});
 
   @override

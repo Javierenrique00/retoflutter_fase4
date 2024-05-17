@@ -4,6 +4,14 @@ import 'package:flutter/material.dart';
 class BasicTemplate extends StatelessWidget {
   final Widget mainContent;
   final Widget stateContent;
+
+  /// ## BasicTemplate
+  /// 
+  /// Has two components as input.
+  /// 
+  /// mainContent is used for displaying information, and stateContent is for complementary data at the top.
+  /// 
+  /// This template can use for example a Title as stateContent, and mainContent can use all data for example a Productlist.
   const BasicTemplate(
       {required this.mainContent, required this.stateContent, super.key});
 

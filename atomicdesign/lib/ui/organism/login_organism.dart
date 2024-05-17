@@ -6,6 +6,17 @@ import 'package:atomicdesign/ui/foundation/size_foundation.dart';
 import 'package:flutter/material.dart';
 
 class LoginOrganism extends StatefulWidget {
+
+  /// ## LoginOrganism
+  /// 
+  /// This component has a two button and two field components that can be used for login purposes.
+  /// 
+  /// The components are:
+  /// 
+  /// - EditFieldAtom for username
+  /// - EditFieldAtom for password
+  /// - TextButonWobackgroundAtom for forget password option
+  /// - TextButtomAtom for validate autentication
   const LoginOrganism({super.key});
 
   @override

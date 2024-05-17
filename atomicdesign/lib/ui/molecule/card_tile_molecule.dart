@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 class CardTileMolecule extends StatelessWidget {
   final String title;
   final Icon icon;
+
+  /// ## CardTileMolecule
+  /// 
+  /// Small card that has an Icon and a text by to side.
   const CardTileMolecule({required this.title,required this.icon ,super.key});
 
   @override

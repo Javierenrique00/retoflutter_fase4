@@ -4,10 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class EditFieldAtom extends StatefulWidget {
-  final Function (String) onChanged;
-  final String name;
-  final String strValue;
-  final EditFieldInputType type;
 
   /// ## EditFieldAtom
   /// 
@@ -25,6 +21,11 @@ class EditFieldAtom extends StatefulWidget {
   /// 
   /// For more information see Widget EditField
   const EditFieldAtom({required this.name,required this.strValue,required this.type,required this.onChanged, super.key});
+
+  final Function (String) onChanged;
+  final String name;
+  final String strValue;
+  final EditFieldInputType type;
 
   @override
   State<EditFieldAtom> createState() => _EditFieldAtomState();

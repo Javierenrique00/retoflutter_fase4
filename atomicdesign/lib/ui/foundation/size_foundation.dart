@@ -20,5 +20,7 @@ abstract class SizeFoundation {
   static const basictemplateInsetBorder = SizesToken.s8x1;
 
   static const showcaseTemplateSpacer = SizesToken.s8x1;
+  static const showcaseTemplaTextWeight = 3;
+  static const showcaseTemplaWidgetWeight = 8;
 
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class TextButtonAtom extends StatelessWidget {
-  final Function() onPressedButton;
-  final String textButton;
 
   /// ## TextButtonAtom
   /// 
@@ -11,6 +9,9 @@ class TextButtonAtom extends StatelessWidget {
   /// Require only a Text and function that is executed when button is pushed.
   const TextButtonAtom(
       {required this.textButton, required this.onPressedButton, super.key});
+
+  final Function() onPressedButton;
+  final String textButton;
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,6 @@ import 'package:atomicdesign/ui/foundation/size_foundation.dart';
 import 'package:flutter/material.dart';
 
 class BasicTemplate extends StatelessWidget {
-  final Widget mainContent;
-  final Widget stateContent;
 
   /// ## BasicTemplate
   /// 
@@ -12,8 +10,10 @@ class BasicTemplate extends StatelessWidget {
   /// mainContent is used for displaying information, and stateContent is for complementary data at the top.
   /// 
   /// This template can use for example a Title as stateContent, and mainContent can use all data for example a Productlist.
-  const BasicTemplate(
-      {required this.mainContent, required this.stateContent, super.key});
+  const BasicTemplate({required this.mainContent, required this.stateContent, super.key});
+
+  final Widget mainContent;
+  final Widget stateContent;
 
   @override
   Widget build(BuildContext context) {

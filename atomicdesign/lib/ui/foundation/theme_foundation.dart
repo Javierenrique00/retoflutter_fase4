@@ -33,7 +33,6 @@ final textButtonWithBackgroundTheme = TextButtonThemeData(
 
 final textButtonWithoutBackgroundTheme = TextButtonThemeData(
   style: ButtonStyle(
-    //backgroundColor: MaterialStateProperty.all(ColorsToken.black01),
     textStyle: MaterialStateProperty.all(
       const TextStyle(fontWeight: FontWeight.normal),
     ),

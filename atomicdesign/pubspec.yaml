@@ -1,7 +1,7 @@
 name: atomicdesign
-description: "A new Flutter package project."
-version: 1.0.0
-homepage:
+description: "Package with graphical elements for a Store project"
+version: 1.0.1
+homepage: https://github.com/Javierenrique00/retoflutter_fase4/tree/main/atomicdesign
 
 environment:
   sdk: '>=3.3.1 <4.0.0'

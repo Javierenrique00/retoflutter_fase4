@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+Added mew ColorsFoundation for app bar
+
 ## 1.0.1
 
 Minor update with small upgrade for code documentation and reordering code. Fixed overflow of Showcase in certain conditions.

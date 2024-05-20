@@ -8,5 +8,6 @@ abstract class ColorsFoundation {
   static const basicLightButtonText = ColorsToken.red1;
   static const basicLightButtonBackground = ColorsToken.red4;
   static const basicWoButtonText = ColorsToken.red4;
+  static const basicAppbarBackgroundColor = ColorsToken.red1;
 
 }

@@ -1,4 +1,5 @@
 import 'package:atomicdesign/ui/organism/login_organism.dart';
+import 'package:atomicdesign/ui/organism/register_organism.dart';
 import 'package:atomicdesign/ui/template/showcase_template.dart';
 import 'package:flutter/material.dart';
 
@@ -7,10 +8,13 @@ class OrganismScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ShowcaseTemplate(
+    return ShowcaseTemplate(
       widgetList: [
-        {
+        const {
           'LoginOrganism': LoginOrganism()
+        },
+        {
+          'RegisterOrganism': RegisterOrganism(register: (String firstName, String lastName, String email, String pwd) {  },)
         },
       ],
     );

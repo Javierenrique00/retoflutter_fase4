@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+Added registerOrganism, LogoSvgAtom, initialPage assets
+
 ## 1.0.2
 
 Added mew ColorsFoundation for app bar

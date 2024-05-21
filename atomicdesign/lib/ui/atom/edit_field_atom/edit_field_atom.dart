@@ -16,6 +16,7 @@ class EditFieldAtom extends StatefulWidget {
   /// - EditFieldInputType.doubleType
   /// - EditFieldInputType.intType
   /// - EditFieldInputType.pwdType
+  /// - EditFieldInputType.emailType
   /// 
   /// Parameter onChanged returns a String with the field entered.
   /// 
@@ -68,11 +69,12 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
 
   TextInputType getKeyboard(EditFieldInputType type) => switch(type){
     EditFieldInputType.stringShortType || EditFieldInputType.stringLongType || EditFieldInputType.pwdType => TextInputType.text,
+    EditFieldInputType.emailType => TextInputType.emailAddress,
     EditFieldInputType.doubleType || EditFieldInputType.intType  => TextInputType.number,
   };
 
   List<TextInputFormatter> getInputFormater(EditFieldInputType type) => switch(type){
-    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType || EditFieldInputType.pwdType => [FilteringTextInputFormatter.singleLineFormatter ],
+    EditFieldInputType.stringShortType || EditFieldInputType.stringLongType || EditFieldInputType.pwdType || EditFieldInputType.emailType => [FilteringTextInputFormatter.singleLineFormatter ],
     EditFieldInputType.doubleType => [FilteringTextInputFormatter.allow((RegExp("[.0-9]"))) ],
     EditFieldInputType.intType => [FilteringTextInputFormatter.allow((RegExp("[0-9]"))) ],
   };
@@ -83,6 +85,7 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
     EditFieldInputType.doubleType => checkDouble(value, type),
     EditFieldInputType.intType => checkInt(value, type),
     EditFieldInputType.pwdType => checkStringShort(value,type),
+    EditFieldInputType.emailType => checkEmail(value, type)
   };
 
   String? checkStringShort(String? value,EditFieldInputType type){
@@ -120,7 +123,7 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
     }
   }
 
-    String? checkInt(String? value,EditFieldInputType type){
+  String? checkInt(String? value,EditFieldInputType type){
     if(value == null || value.isEmpty){
       return "Entre un valor";
     }else if(value.length > 10){
@@ -134,5 +137,19 @@ class _EditFieldAtomState extends State<EditFieldAtom> {
       return null;
     }
   }
+
+  String? checkEmail(String? value,EditFieldInputType type){
+    if(value == null || value.isEmpty){
+      return "Entre un valor";
+    }else if(value.length > 30){
+      return "Debe tener máximo 30 dígitos";
+    }else{
+      final bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+      .hasMatch(value);
+      if(!emailValid) return "Entre un email válido";
+      return null;
+    }
+  }
+
 
 }

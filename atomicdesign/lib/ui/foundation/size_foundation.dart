@@ -23,4 +23,6 @@ abstract class SizeFoundation {
   static const showcaseTemplaTextWeight = 3;
   static const showcaseTemplaWidgetWeight = 8;
 
+  static const initalPageInsets = SizesToken.s25x4;
+
 }

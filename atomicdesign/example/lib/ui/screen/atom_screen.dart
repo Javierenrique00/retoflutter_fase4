@@ -1,5 +1,6 @@
 import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_atom.dart';
 import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_input_type.dart';
+import 'package:atomicdesign/ui/atom/logo_svg_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_wo_background_atom.dart';
 import 'package:atomicdesign/ui/template/showcase_template.dart';
@@ -30,6 +31,9 @@ class AtomScreen extends StatelessWidget {
               strValue: 'Pepito',
               type: EditFieldInputType.stringShortType,
               onChanged: (value) {})
+        },
+        const {
+          'LogoSvgAtom': LogoSvgAtom()
         },
       ],
     );

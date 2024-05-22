@@ -1,3 +1,4 @@
+import 'package:atomicdesign/domain/model/product_ui_model.dart';
 import 'package:atomicdesign/ui/page/home_page.dart';
 import 'package:atomicdesign/ui/page/initial_page.dart';
 import 'package:atomicdesign/ui/page/list_product_page.dart';
@@ -13,6 +14,12 @@ class PageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final product1 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/200', name: 'Cebolla roja', price: '2.850');
+    final product2 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/312/200/200', name: 'Miel del campo', price: '25.000');
+    final product3 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/300/200/200', name: 'Cebolla roja', price: '2.850');
+    final product4 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/123/200/200', name: 'Miel del campo', price: '25.000');
+
     return ShowcaseTemplate(
       widgetList: [
         const {
@@ -34,7 +41,7 @@ class PageScreen extends StatelessWidget {
           'TryAgainPage': TryAgainPage(onPressed: () {  },)
         },
         {
-          'ListProductPage': ListProductPage(products: const [], shrinkWrap: true, onClick: (int id) {  },)
+          'ListProductPage': ListProductPage(products: [product1,product2,product3,product4], shrinkWrap: true, onClick: (int id) {  },)
         },
       ],
     );

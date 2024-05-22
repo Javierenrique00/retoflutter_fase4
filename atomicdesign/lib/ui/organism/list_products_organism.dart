@@ -22,6 +22,7 @@ class ListProductsOrganism extends StatelessWidget {
         mainAxisSpacing: 8,
         padding: const EdgeInsets.all(8),
         crossAxisCount: 2,
+        childAspectRatio: 0.75,
         children: widgetList,
       ),
     );

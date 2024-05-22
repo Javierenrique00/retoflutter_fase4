@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1
+
+Fixed ListProductPage component.
+
 ## 1.4.0
 
 Added new components ListProductPage, ListProductOrganism, LoadingPage, tryAgainPage

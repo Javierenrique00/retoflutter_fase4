@@ -30,8 +30,8 @@ abstract class SizeFoundation {
 
   static const svgRectSize = SizesToken.s25x4;
 
-  static const cardPromotionWight = SizesToken.s25x2;
-  static const cardPromotionHeight = SizesToken.s25x1;
+  static const cardPromotionWidth = SizesToken.s25x4;
+  static const cardPromotionHeight = SizesToken.s25x2;
   static const cardPromotionEllipticalRadious1 = 7.0;
   static const cardPromotionEllipticalRadious2 = 4.0;
 
@@ -45,6 +45,18 @@ abstract class SizeFoundation {
 
   static const productMoleculeInset = SizesToken.s8x1;
   static const productMoleculeImageRadius = SizesToken.s8x2;
+  static const productMoleculeWideSize = SizesToken.s100x3;
+  static const productMoleculeImageBoxWidth = SizesToken.s25x3;
+  static const productMoleculeImageBoxheight = SizesToken.s25x3;
+  static const productMoleculeDescriptionMaxLines = 2;
+  static const productMoleculePriceMaxLines = 1;
+
+  static const listProductOrganismWidth = SizesToken.s100x6;
+  static const listProductOrganismSpacer = SizesToken.s8x1;
+  static const listProductOrganismEdgeInset = SizesToken.s8x1;
+  static const listProductOrganismCrossAxis = 2;
+  static const listProductOrganismChilsAspectRatio = 0.75;
+
 
   static const listProductPageWidth = SizesToken.s100x4;
 

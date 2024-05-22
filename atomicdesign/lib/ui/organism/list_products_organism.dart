@@ -1,4 +1,5 @@
 import 'package:atomicdesign/domain/model/product_ui_model.dart';
+import 'package:atomicdesign/ui/foundation/size_foundation.dart';
 import 'package:atomicdesign/ui/molecule/product_molecule.dart';
 import 'package:flutter/material.dart';
 
@@ -14,15 +15,15 @@ class ListProductsOrganism extends StatelessWidget {
         .map((e) => ProductMolecule(product: e, onclick: (id)=>onClick(id)) as Widget)
         .toList();
     return SizedBox(
-      width: 600,
+      width: SizeFoundation.listProductOrganismWidth,
       child: GridView.count(
         shrinkWrap: shrinkWrap,
         primary: false,
-        crossAxisSpacing: 8,
-        mainAxisSpacing: 8,
-        padding: const EdgeInsets.all(8),
-        crossAxisCount: 2,
-        childAspectRatio: 0.75,
+        crossAxisSpacing: SizeFoundation.listProductOrganismSpacer,
+        mainAxisSpacing: SizeFoundation.listProductOrganismSpacer,
+        padding: const EdgeInsets.all(SizeFoundation.listProductOrganismEdgeInset),
+        crossAxisCount: SizeFoundation.listProductOrganismCrossAxis,
+        childAspectRatio: SizeFoundation.listProductOrganismChilsAspectRatio,
         children: widgetList,
       ),
     );

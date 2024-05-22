@@ -7,8 +7,8 @@ class CardPromotionMolecule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 100,
-      height: 50,
+      width: SizeFoundation.cardPromotionWidth,
+      height: SizeFoundation.cardPromotionHeight,
       child: ClipRRect(
           clipBehavior: Clip.antiAlias,
           borderRadius: const BorderRadius.all(Radius.elliptical(

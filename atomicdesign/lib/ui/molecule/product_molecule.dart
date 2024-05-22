@@ -14,7 +14,7 @@ class ProductMolecule extends StatelessWidget {
     return GestureDetector(
       onTap: () => onclick(product.id),
       child: SizedBox(
-        width: 300,
+        width: SizeFoundation.productMoleculeWideSize,
         child: Card(
           child: Container(
             padding: const EdgeInsets.all(SizeFoundation.productMoleculeInset),
@@ -23,8 +23,8 @@ class ProductMolecule extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  width: 150,
-                  height: 150,
+                  width: SizeFoundation.productMoleculeImageBoxWidth,
+                  height: SizeFoundation.productMoleculeImageBoxheight,
                   child: FittedBox(
                     fit: BoxFit.contain,
                     child: ClipRRect(
@@ -35,8 +35,8 @@ class ProductMolecule extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(product.name),
-                Text(product.price)
+                Text(overflow: TextOverflow.ellipsis, maxLines: SizeFoundation.productMoleculeDescriptionMaxLines, product.name),
+                Text(maxLines:  SizeFoundation.productMoleculePriceMaxLines,product.price, style: const TextStyle(fontWeight: FontWeight.bold),)
               ],
             ),
           ),

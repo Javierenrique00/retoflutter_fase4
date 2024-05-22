@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.3
+
+Adjust Max lines in text for ListProductMolecule componenet.
+
 ## 1.4.2
 
 Adjust ListProductPage component for overflowed pixels.

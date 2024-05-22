@@ -1,10 +1,9 @@
-import 'package:atomicdesign/ui/foundation/colors_foundation.dart';
 import 'package:atomicdesign/ui/foundation/size_foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class LogoSvgAtom extends StatelessWidget {
-  const LogoSvgAtom({super.key});
+class DiscountSvgAtom extends StatelessWidget {
+  const DiscountSvgAtom({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +13,8 @@ class LogoSvgAtom extends StatelessWidget {
   Widget _svgIconFastStore() => SvgPicture.asset(
         width: SizeFoundation.svgRectSize,
         height: SizeFoundation.svgRectSize,
-        "packages/atomicdesign/lib/assets/plain_fast_store.svg",
-        colorFilter: const ColorFilter.mode(
-            ColorsFoundation.basicLightButtonBackground, BlendMode.srcIn),
-        semanticsLabel: 'JR Store logo',
+        "packages/atomicdesign/lib/assets/discount.svg",
+        semanticsLabel: 'Discount',
         fit: BoxFit.contain,
       );
-
-
 }
-

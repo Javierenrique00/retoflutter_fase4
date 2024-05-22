@@ -25,4 +25,10 @@ abstract class SizeFoundation {
 
   static const initalPageInsets = SizesToken.s25x4;
 
+  static const discountMoleculeSize = SizesToken.s25x2;
+  static const discountMoleculeSizehalf = SizesToken.s25x1;
+
+  static const svgRectSize = SizesToken.s25x3;
+
+
 }

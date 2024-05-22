@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+Added new components CardSvgMolecule, DiscountMolecule and scrollViewOrganism
+
 ## 1.1.0
 
 Added registerOrganism, LogoSvgAtom, initialPage assets

@@ -1,3 +1,5 @@
+import 'package:atomicdesign/ui/atom/clothes_svg_atom.dart';
+import 'package:atomicdesign/ui/atom/discount_svg_atom.dart';
 import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_atom.dart';
 import 'package:atomicdesign/ui/atom/edit_field_atom/edit_field_input_type.dart';
 import 'package:atomicdesign/ui/atom/logo_svg_atom.dart';
@@ -34,6 +36,12 @@ class AtomScreen extends StatelessWidget {
         },
         const {
           'LogoSvgAtom': LogoSvgAtom()
+        },
+        const {
+          'DiscountSvgAtom': DiscountSvgAtom()
+        },
+        const {
+          'ClothesSvgAtom': ClothesSvgAtom()
         },
       ],
     );

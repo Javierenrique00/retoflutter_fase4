@@ -37,5 +37,16 @@ abstract class SizeFoundation {
 
   static const homePageWidth = SizesToken.s100x6;
 
+  static const loadingPageSize = SizesToken.s100x3;
+
+  static const registerPageWidth = SizesToken.s100x4;
+
+  static const tryAgainPageWidth = SizesToken.s25x3;
+
+  static const productMoleculeInset = SizesToken.s8x1;
+  static const productMoleculeImageRadius = SizesToken.s8x2;
+
+  static const listProductPageWidth = SizesToken.s100x4;
+
 
 }

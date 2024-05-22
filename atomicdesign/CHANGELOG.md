@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+Added new components ListProductPage, ListProductOrganism, LoadingPage, tryAgainPage
+
 ## 1.3.0
 
 Added new component CardPromotionMolecule.

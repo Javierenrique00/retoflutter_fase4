@@ -10,4 +10,6 @@ abstract class ColorsFoundation {
   static const basicWoButtonText = ColorsToken.red4;
   static const basicAppbarBackgroundColor = ColorsToken.red1;
 
+  static const loadingAtomColor = ColorsToken.red3;
+
 }

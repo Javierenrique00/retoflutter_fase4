@@ -32,7 +32,7 @@ class MoleculeScreen extends StatelessWidget {
           'CardPromotionMolecule':CardPromotionMolecule(),
         },
         {
-          'ProductMolecule':ProductMolecule(product: ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/200', name: 'Cebolla roja', price: '2.850'), onclick: (id) {  },),
+          'ProductMolecule':ProductMolecule(product: ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/400', name: 'Cebolla roja', price: '2.850'), onclick: (id) {  },),
         },
       ],
     );

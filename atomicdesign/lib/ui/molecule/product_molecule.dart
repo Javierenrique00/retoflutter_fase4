@@ -4,38 +4,44 @@ import 'package:flutter/material.dart';
 
 class ProductMolecule extends StatelessWidget {
   const ProductMolecule(
-      {required this.product,
-      required this.onclick,
-      super.key});
+      {required this.product, required this.onclick, super.key});
 
-  final Function (int id) onclick;
+  final Function(int id) onclick;
   final ProductUiModel product;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => onclick(product.id),
-      child: 
-    SizedBox(
-      width: 200,
-      child: Card(
-        child: Container(
-          padding: const EdgeInsets.all(SizeFoundation.productMoleculeInset),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ClipRRect(
-                clipBehavior: Clip.antiAlias,
-                borderRadius: const BorderRadius.all(Radius.circular(SizeFoundation.productMoleculeImageRadius)),
-                child: Image.network(product.urlImage),
-              ),
-              Text(product.name),
-              Text(product.price)
-            ],
+      child: SizedBox(
+        width: 300,
+        child: Card(
+          child: Container(
+            padding: const EdgeInsets.all(SizeFoundation.productMoleculeInset),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: 150,
+                  height: 150,
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: ClipRRect(
+                      clipBehavior: Clip.antiAlias,
+                      borderRadius: const BorderRadius.all(Radius.circular(
+                          SizeFoundation.productMoleculeImageRadius)),
+                      child: Image.network(product.urlImage),
+                    ),
+                  ),
+                ),
+                Text(product.name),
+                Text(product.price)
+              ],
+            ),
           ),
         ),
       ),
-    ),);
+    );
   }
 }

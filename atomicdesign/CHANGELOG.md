@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2
+
+Adjust ListProductPage component for overflowed pixels.
+
 ## 1.4.1
 
 Fixed ListProductPage component.

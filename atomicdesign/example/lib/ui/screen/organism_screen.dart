@@ -11,7 +11,7 @@ class OrganismScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final product1 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/200', name: 'Cebolla roja', price: '2.850');
+    final product1 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/400', name: 'Cebolla roja', price: '2.850');
     final product2 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/312/200/200', name: 'Miel del campo', price: '25.000');
     final product3 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/300/200/200', name: 'Cebolla roja', price: '2.850');
     final product4 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/123/200/200', name: 'Miel del campo', price: '25.000');

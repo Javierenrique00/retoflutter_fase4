@@ -11,7 +11,10 @@ class CardSvgMolecule extends StatelessWidget {
       child: SizedBox(
         width: SizeFoundation.discountMoleculeSize,
         height: SizeFoundation.discountMoleculeSize,
-        child: widget,
+        child: FittedBox(
+          fit: BoxFit.contain,
+          child: widget,
+        ),
       ),
     );
   }

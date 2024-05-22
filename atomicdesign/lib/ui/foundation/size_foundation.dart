@@ -25,10 +25,17 @@ abstract class SizeFoundation {
 
   static const initalPageInsets = SizesToken.s25x4;
 
-  static const discountMoleculeSize = SizesToken.s25x2;
-  static const discountMoleculeSizehalf = SizesToken.s25x1;
+  static const discountMoleculeSize = SizesToken.s25x4;
+  static const discountMoleculeSizehalf = SizesToken.s25x3;
 
-  static const svgRectSize = SizesToken.s25x3;
+  static const svgRectSize = SizesToken.s25x4;
+
+  static const cardPromotionWight = SizesToken.s25x2;
+  static const cardPromotionHeight = SizesToken.s25x1;
+  static const cardPromotionEllipticalRadious1 = 7.0;
+  static const cardPromotionEllipticalRadious2 = 4.0;
+
+  static const homePageWidth = SizesToken.s100x6;
 
 
 }

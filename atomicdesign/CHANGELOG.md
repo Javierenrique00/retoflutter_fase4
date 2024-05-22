@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+Added new component CardPromotionMolecule.
+
 ## 1.2.0
 
 Added new components CardSvgMolecule, DiscountMolecule and scrollViewOrganism

@@ -1,5 +1,6 @@
 
 import 'package:atomicdesign/ui/atom/clothes_svg_atom.dart';
+import 'package:atomicdesign/ui/molecule/card_promotion_molecule.dart';
 import 'package:atomicdesign/ui/molecule/card_svg_molecule.dart';
 import 'package:atomicdesign/ui/molecule/card_tile_molecule.dart';
 import 'package:atomicdesign/ui/molecule/discount_molecule.dart';
@@ -24,6 +25,9 @@ class MoleculeScreen extends StatelessWidget {
         },
         {
           'CardSvgMoleculeWithSvg':CardSvgMolecule(widget: ClothesSvgAtom(),),
+        },
+        {
+          'CardPromotionMolecule':CardPromotionMolecule(),
         },
       ],
     );

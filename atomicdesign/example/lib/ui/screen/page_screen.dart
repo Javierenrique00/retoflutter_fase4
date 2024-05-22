@@ -1,3 +1,4 @@
+import 'package:atomicdesign/ui/page/home_page.dart';
 import 'package:atomicdesign/ui/page/initial_page.dart';
 import 'package:atomicdesign/ui/page/login_page.dart';
 import 'package:atomicdesign/ui/template/showcase_template.dart';
@@ -13,8 +14,11 @@ class PageScreen extends StatelessWidget {
         {
           'LoginPage': LoginPage()
         },
-                {
+        {
           'InitialPage': InitalPage()
+        },
+        {
+          'HomePage': HomePage()
         },
 
       ],

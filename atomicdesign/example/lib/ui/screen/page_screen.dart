@@ -55,7 +55,7 @@ class PageScreen extends StatelessWidget {
         },
         {
           'ListProductPage': ListProductPage(
-            products: [product1, product2, product3, product4],
+            products: [product1, product2, product3, product4,product1, product2, product3, product4,],
             shrinkWrap: true,
             onClick: (int id) {},
             categories: const ['Cat1','Categorie 2','Category 3'],

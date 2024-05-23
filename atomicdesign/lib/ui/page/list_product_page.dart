@@ -26,12 +26,15 @@ class ListProductPage extends StatelessWidget {
         width: SizeFoundation.listProductPageWidth,
         child: Column(
           children: [
-            ListCategoriesOrganism(items: categories, onCLick: (id)=> onClickCategories(id)),
-            ListProductsOrganism(
-          products: products,
-          shrinkWrap: shrinkWrap,
-          onClick: (int id) => onClick(id),
-        ),
+            ListCategoriesOrganism(
+                items: categories, onCLick: (id) => onClickCategories(id)),
+            Expanded(
+              child: ListProductsOrganism(
+                products: products,
+                shrinkWrap: shrinkWrap,
+                onClick: (int id) => onClick(id),
+              ),
+            ),
           ],
         ),
       ),

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.1
+
+Fix ListProductPage with a expanded widget.
+
 ## 1.5.0
 
 New Components:

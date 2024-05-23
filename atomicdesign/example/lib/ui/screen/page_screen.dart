@@ -14,34 +14,55 @@ class PageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    final product1 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/292/200/200', name: 'Cebolla roja qur contiene mucho texto y no sabemos que hacer con tanto Texto que nos impide que se vea bien', price: '2.850');
-    final product2 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/312/200/200', name: 'Miel del campo', price: '25.000');
-    final product3 = ProductUiModel(id: 1, urlImage:'https://picsum.photos/id/300/600/1200', name: 'Cebolla roja', price: '2.850');
-    final product4 = ProductUiModel(id: 2, urlImage:'https://picsum.photos/id/123/200/200', name: 'Miel del campo', price: '25.000');
+    final product1 = ProductUiModel(
+        id: 1,
+        urlImage: 'https://picsum.photos/id/292/200/200',
+        name:
+            'Cebolla roja qur contiene mucho texto y no sabemos que hacer con tanto Texto que nos impide que se vea bien',
+        price: '2.850');
+    final product2 = ProductUiModel(
+        id: 2,
+        urlImage: 'https://picsum.photos/id/312/200/200',
+        name: 'Miel del campo',
+        price: '25.000');
+    final product3 = ProductUiModel(
+        id: 1,
+        urlImage: 'https://picsum.photos/id/300/600/1200',
+        name: 'Cebolla roja',
+        price: '2.850');
+    final product4 = ProductUiModel(
+        id: 2,
+        urlImage: 'https://picsum.photos/id/123/200/200',
+        name: 'Miel del campo',
+        price: '25.000');
 
     return ShowcaseTemplate(
       widgetList: [
-        const {
-          'LoginPage': LoginPage()
-        },
-        const {
-          'InitialPage': InitalPage()
-        },
-        const {
-          'HomePage': HomePage()
-        },
-        const {
-          'LoadingPage': LoadingPage()
+        const {'LoginPage': LoginPage()},
+        const {'InitialPage': InitalPage()},
+        const {'HomePage': HomePage()},
+        const {'LoadingPage': LoadingPage()},
+        {
+          'RegisterPage': Registerpage(
+            register: (String firstName, String lastName, String email,
+                String pwd) {},
+          )
         },
         {
-          'RegisterPage': Registerpage(register: (String firstName, String lastName, String email, String pwd) {  },)
+          'TryAgainPage': TryAgainPage(
+            onPressed: () {},
+          )
         },
         {
-          'TryAgainPage': TryAgainPage(onPressed: () {  },)
-        },
-        {
-          'ListProductPage': ListProductPage(products: [product1,product2,product3,product4], shrinkWrap: true, onClick: (int id) {  },)
+          'ListProductPage': ListProductPage(
+            products: [product1, product2, product3, product4],
+            shrinkWrap: true,
+            onClick: (int id) {},
+            categories: const ['Cat1','Categorie 2','Category 3'],
+            onClickCategories: (id) {
+              
+            },
+          )
         },
       ],
     );

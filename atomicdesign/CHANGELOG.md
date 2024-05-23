@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.0
+
+New Components:
+
+- ListCategoriesOrganism
+- TextButtonWoShortAtom
+
+Update Components
+
+- List Product page
+
 ## 1.4.3
 
 Adjust Max lines in text for ListProductMolecule componenet.
@@ -38,4 +49,4 @@ Minor update with small upgrade for code documentation and reordering code. Fixe
 
 ## 1.0.0
 
-* Initial elemnts with Showroom in ./example and documentations for the atomic design implementation.
+- Initial elemnts with Showroom in ./example and documentations for the atomic design implementation.

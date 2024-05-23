@@ -6,6 +6,7 @@ import 'package:atomicdesign/ui/atom/loading_atom.dart';
 import 'package:atomicdesign/ui/atom/logo_svg_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_wo_background_atom.dart';
+import 'package:atomicdesign/ui/atom/text_button_wo_short_atom.dart';
 import 'package:atomicdesign/ui/template/showcase_template.dart';
 import 'package:flutter/material.dart';
 
@@ -46,6 +47,11 @@ class AtomScreen extends StatelessWidget {
         },
         const {
           'LoadingAtom': LoadingAtom()
+        },
+        {
+          'TextButtonWoShortAtom': TextButtonWoShortAtom(
+            textButton: 'Category', idButton: 1, onClick: (int idButton) {  },
+          )
         },
       ],
     );

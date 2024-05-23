@@ -1,4 +1,5 @@
 import 'package:atomicdesign/domain/model/product_ui_model.dart';
+import 'package:atomicdesign/ui/organism/list_categories_organism.dart';
 import 'package:atomicdesign/ui/organism/list_products_organism.dart';
 import 'package:atomicdesign/ui/organism/login_organism.dart';
 import 'package:atomicdesign/ui/organism/register_organism.dart';
@@ -34,6 +35,9 @@ class OrganismScreen extends StatelessWidget {
             product3,
             product4
           ], shrinkWrap: true, onClick: (int id) {  },),
+        },
+        {
+          'ListCategoriesOrganism': ListCategoriesOrganism(items: const ['cat1','cat2','cat3','cat4'], onCLick: (int id) {  },),
         },
       ],
     );

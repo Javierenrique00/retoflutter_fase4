@@ -45,3 +45,19 @@ final textButtonWithoutBackgroundTheme = TextButtonThemeData(
         MaterialStateProperty.all(ColorsFoundation.basicWoButtonText),
   ),
 );
+
+final textButtonWithoutBackgroundShortTheme = TextButtonThemeData(
+  style: ButtonStyle(
+    textStyle: MaterialStateProperty.all(
+      const TextStyle(fontWeight: FontWeight.normal),
+    ),
+    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(RadiousFoundation.basicButton))),
+    // minimumSize: MaterialStateProperty.all(const Size(
+    //     SizeFoundation.basicTextButtonWidth,
+    //     SizeFoundation.basicTextButtonHeight)),
+    foregroundColor:
+        MaterialStateProperty.all(ColorsFoundation.basicWoButtonText),
+  ),
+);
+

@@ -37,7 +37,7 @@ class OrganismScreen extends StatelessWidget {
           ], shrinkWrap: true, onClick: (int id) {  },),
         },
         {
-          'ListCategoriesOrganism': ListCategoriesOrganism(items: const ['cat1','cat2','cat3','cat4'], onCLick: (int id) {  },),
+          'ListCategoriesOrganism': ListCategoriesOrganism(items: const ['Categoria 1','Categoria 2','Categoria 3','Categoria 4','Categoria 5','Categoria 6'], onCLick: (int id) {  },),
         },
       ],
     );

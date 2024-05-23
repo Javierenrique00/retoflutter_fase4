@@ -1,4 +1,5 @@
 import 'package:atomicdesign/ui/atom/text_button_wo_short_atom.dart';
+import 'package:atomicdesign/ui/foundation/size_foundation.dart';
 import 'package:flutter/material.dart';
 
 class ListCategoriesOrganism extends StatelessWidget {
@@ -9,26 +10,19 @@ class ListCategoriesOrganism extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final widgedList = items
-        .asMap()
-        .map(
-          (key, value) => MapEntry(
-              key,
-              TextButtonWoShortAtom(
-                idButton: key,
-                textButton: value,
-                onClick: (int idButton) => onCLick(idButton),
-              ) as Widget),
-        )
-        .values
-        .toList();
-
     return SizedBox(
-      width: 400,
-      child: Row(
-        children: widgedList,
-      ),
+      width: SizeFoundation.listCategoriesOrganismWidth,
+      height: SizeFoundation.listCategoriesOrganismHeight,
+      child: ListView.builder(
+          itemCount: items.length,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return TextButtonWoShortAtom(
+              idButton: index,
+              textButton: items[index],
+              onClick: (int idButton) => onCLick(idButton),
+            );
+          }),
     );
   }
-
 }

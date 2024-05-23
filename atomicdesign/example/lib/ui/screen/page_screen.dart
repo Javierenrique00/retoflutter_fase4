@@ -1,7 +1,6 @@
 import 'package:atomicdesign/domain/model/product_ui_model.dart';
 import 'package:atomicdesign/ui/page/home_page.dart';
 import 'package:atomicdesign/ui/page/initial_page.dart';
-import 'package:atomicdesign/ui/page/list_product_page.dart';
 import 'package:atomicdesign/ui/page/loading_page.dart';
 import 'package:atomicdesign/ui/page/login_page.dart';
 import 'package:atomicdesign/ui/page/register_page.dart';
@@ -53,17 +52,16 @@ class PageScreen extends StatelessWidget {
             onPressed: () {},
           )
         },
-        {
-          'ListProductPage': ListProductPage(
-            products: [product1, product2, product3, product4,product1, product2, product3, product4,],
-            shrinkWrap: true,
-            onClick: (int id) {},
-            categories: const ['Cat1','Categorie 2','Category 3'],
-            onClickCategories: (id) {
-              
-            },
-          )
-        },
+        // {
+        //   'ListProductPage': ListProductPage(
+        //     products: [product1, product2, product3, product4,product1, product2, product3, product4,],
+        //     shrinkWrap: true,
+        //     onClick: (int id) {},
+        //     categories: const ['Cat1','Categorie 2','Category 3'],
+        //     onClickCategories: (id) {
+        //     },
+        //   )
+        // },
       ],
     );
   }

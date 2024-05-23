@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2
+
+Fix categories widget.
+
 ## 1.5.1
 
 Fix ListProductPage with a expanded widget.

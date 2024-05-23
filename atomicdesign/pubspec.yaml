@@ -1,6 +1,6 @@
 name: atomicdesign
 description: "Package with graphical elements for a Store project"
-version: 1.5.1
+version: 1.5.2
 homepage: https://github.com/Javierenrique00/retoflutter_fase4/tree/main/atomicdesign
 
 environment:

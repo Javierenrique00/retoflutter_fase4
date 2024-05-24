@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.4
+
+ProductUI HashCode and equity Overload fix.
+
 ## 1.5.3
 
 New improves ./Example to display `showCase`

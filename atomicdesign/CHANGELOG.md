@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.3
+
+New improves ./Example to display `showCase`
+
 ## 1.5.2
 
 Fix categories widget.

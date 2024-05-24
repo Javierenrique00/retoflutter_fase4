@@ -55,13 +55,11 @@ abstract class SizeFoundation {
   static const listProductOrganismSpacer = SizesToken.s8x1;
   static const listProductOrganismEdgeInset = SizesToken.s8x1;
   static const listProductOrganismCrossAxis = 2;
-  static const listProductOrganismChilsAspectRatio = 0.75;
+  static const listProductOrganismChilsAspectRatio = 0.7;
 
   static const listProductPageWidth = SizesToken.s100x4;
 
   static const listCategoriesOrganismWidth = SizesToken.s100x4;
   static const listCategoriesOrganismHeight = SizesToken.s25x2;
-
-
 
 }

@@ -1,5 +1,5 @@
 import 'package:atomicdesign/ui/foundation/theme_foundation.dart';
-import 'package:example/ui/tab_menu.dart';
+import 'package:example/ui/navigation/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       theme: basicLightThemeFoundation,
       darkTheme: basicDarkThemeFoundation,
       themeMode: ThemeMode.light,
-      home: const TabMenu(),
+      routes: appRoutes,
     );
   }
 }

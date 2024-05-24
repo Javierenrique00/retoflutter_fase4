@@ -21,19 +21,19 @@ class ProductMoleculeScreen extends StatelessWidget {
           children: [
             const Text('Img 200x300'),
             const SizedBox(height: SizesApp.vertSpacer,),
-            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/200/300', price: '2.850'),onclick: (id) {
+            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/200/300', price: '2.850'),onclick: () {
             },),
             const VerticalDivWidget(),
 
             const Text('Img 300x200'),
             const SizedBox(height: SizesApp.vertSpacer,),
-            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/300/200', price: '2.850'),onclick: (id) {
+            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/300/200', price: '2.850'),onclick: () {
             },),
             const VerticalDivWidget(),
 
             const Text('Img 200x200'),
             const SizedBox(height: SizesApp.vertSpacer,),
-            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/200/200', price: '2.850'),onclick: (id) {
+            ProductMolecule(product: ProductUiModel(id: 1,name: 'Miel de abejas saludable',urlImage:'https://picsum.photos/id/312/200/200', price: '2.850'),onclick: () {
             },),
             const VerticalDivWidget(),
 

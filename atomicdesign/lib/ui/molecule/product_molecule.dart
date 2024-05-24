@@ -6,13 +6,13 @@ class ProductMolecule extends StatelessWidget {
   const ProductMolecule(
       {required this.product, required this.onclick, super.key});
 
-  final Function(int id) onclick;
+  final Function() onclick;
   final ProductUiModel product;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => onclick(product.id),
+      onTap: () => onclick(),
       child: SizedBox(
         width: SizeFoundation.productMoleculeWideSize,
         child: Card(

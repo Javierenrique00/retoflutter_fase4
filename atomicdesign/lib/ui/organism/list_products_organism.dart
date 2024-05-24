@@ -11,9 +11,9 @@ class ListProductsOrganism extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final widgetList = products
-        .map((e) => ProductMolecule(product: e, onclick: (id)=>onClick(id)) as Widget)
-        .toList();
+
+    final widgetList = products.asMap().map((key, value) => MapEntry(key, ProductMolecule(product: value, onclick: ()=>onClick(key)) as Widget),).values.toList();
+
     return SizedBox(
       width: SizeFoundation.listProductOrganismWidth,
       child: GridView.count(

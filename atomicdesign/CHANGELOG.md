@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5
+
+Fix ProductListOrganism onClick id parameter.
+
 ## 1.5.4
 
 ProductUI HashCode and equity Overload fix.

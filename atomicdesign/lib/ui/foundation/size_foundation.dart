@@ -57,9 +57,15 @@ abstract class SizeFoundation {
   static const listProductOrganismCrossAxis = 2;
   static const listProductOrganismChilsAspectRatio = 0.7;
 
+  static const pdpWidth = SizesToken.s100x4;
+  static const pdpTitleLines = 1;
+  static const pdpDescriptionLines = 2;
+
   static const listProductPageWidth = SizesToken.s100x4;
 
   static const listCategoriesOrganismWidth = SizesToken.s100x4;
   static const listCategoriesOrganismHeight = SizesToken.s25x2;
+
+  static const pdpSpacer = SizesToken.s8x1;
 
 }

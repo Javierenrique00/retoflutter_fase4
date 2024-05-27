@@ -22,6 +22,7 @@ abstract class Navigation {
   static const registerPageScreen = "/register";
   static const tryAgainPageScreen = "/tryAgain";
   static const loadingPageScreen = "/loadingPage";
+  static const pdpPageScreen = "/pdpPage";
 
 
   

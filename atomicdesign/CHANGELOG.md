@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+Added Product detail page.
+
 ## 1.5.5
 
 Fix ProductListOrganism onClick id parameter.

@@ -12,4 +12,6 @@ abstract class ColorsFoundation {
 
   static const loadingAtomColor = ColorsToken.red3;
 
+  static const pdpPriceColor = ColorsToken.red3;
+
 }

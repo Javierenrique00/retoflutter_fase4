@@ -14,6 +14,7 @@ import 'package:example/ui/modules/pages/initial_page_screen.dart';
 import 'package:example/ui/modules/pages/list_product_page_screen.dart';
 import 'package:example/ui/modules/pages/loading_page_screen.dart';
 import 'package:example/ui/modules/pages/pages_screen.dart';
+import 'package:example/ui/modules/pages/pdp_page_screen.dart';
 import 'package:example/ui/modules/pages/register_page_screen.dart';
 import 'package:example/ui/modules/pages/try_again_page_screen.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +47,7 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.registerPageScreen:(context) => const RegisterPageScreen(),
           Navigation.tryAgainPageScreen:(context) => const TryAgainPageScreen(),
           Navigation.loadingPageScreen:(context) => const LoadingPageScreen(),
+          Navigation.pdpPageScreen:(context) => const PdpPageScreen(),
 
         };
       }

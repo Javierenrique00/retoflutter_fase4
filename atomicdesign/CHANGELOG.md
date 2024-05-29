@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.7.0
+
+New components for cart app bar indicator
+
+- CircleNumberAtom
+- CartCounterMolecule
+- AppWbarTemplate
+
 ## 1.6.0
 
 Added Product detail page.

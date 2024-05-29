@@ -12,6 +12,7 @@ class AtomsScreen extends StatelessWidget {
     return ScreenTemplate(title: 'Atoms', nodes: [
       NodeModel(name: 'Buttons', namedRoute: Navigation.buttonsScreen),
       NodeModel(name: 'EditTextFields', namedRoute: Navigation.editTextFieldScreen),
+      NodeModel(name: 'Other Atoms', namedRoute: Navigation.otherAtomsScreen),
       NodeModel(name: 'Resources', namedRoute: Navigation.resourcesScreen),
     ]);
   }

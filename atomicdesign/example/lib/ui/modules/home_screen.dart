@@ -12,8 +12,8 @@ class HomeScreen extends StatelessWidget {
       NodeModel(name: 'Atoms', namedRoute: Navigation.atomsScreen),
       NodeModel(name: 'Molecules', namedRoute: Navigation.moleculeScreen),
       NodeModel(name: 'Organism', namedRoute: Navigation.organismsScreen),
-      // NodeModel(name: 'Template', namedRoute: Navigation.atomsScreen),
-       NodeModel(name: 'Pages', namedRoute: Navigation.pagesScreen),
+      NodeModel(name: 'Templates', namedRoute: Navigation.templatesScreen),
+      NodeModel(name: 'Pages', namedRoute: Navigation.pagesScreen),
     ]);
   }
 }

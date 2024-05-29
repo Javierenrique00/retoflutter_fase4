@@ -14,4 +14,7 @@ abstract class ColorsFoundation {
 
   static const pdpPriceColor = ColorsToken.red3;
 
+  static const circleNumberBackground = ColorsToken.red3;
+
+
 }

@@ -3,6 +3,9 @@ import 'package:atomicdesign/ui/token/sizes_token.dart';
 
 abstract class SizeFoundation {
 
+  static const circleNumbertAtomLengthBase = 10.0;
+  static const circleNumbertextFontSize = SizesToken.s8x1;
+  
   static const basicTextButtonWidth = SizesToken.s25x4;
   static const basicTextButtonHeight = SizesToken.s25x2;
 
@@ -66,6 +69,12 @@ abstract class SizeFoundation {
   static const listCategoriesOrganismWidth = SizesToken.s100x4;
   static const listCategoriesOrganismHeight = SizesToken.s25x2;
 
+  static const pdpPagePading = SizesToken.s100x1;
+
   static const pdpSpacer = SizesToken.s8x1;
+
+  static const basicSpacer = SizesToken.s8x1;
+
+  static const appWbarTemplateCartSpacer = SizesToken.s25x2; 
 
 }

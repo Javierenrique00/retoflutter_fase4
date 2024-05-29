@@ -11,6 +11,7 @@ abstract class Navigation {
   static const moleculeScreen = "/molecules";
   static const productMoleculeScreen = "/productMolecule";
   static const cartCounterMoleculeScreen = "/cartCounterMolecule";
+  static const otherMoleculesScreen = "/otherMolecules";
 
 
   static const organismsScreen = "/organisms";
@@ -18,6 +19,7 @@ abstract class Navigation {
   static const listProductOrganismScreen = "/listProductOrganism";
   static const registerOrganismScreen = "/registerOrganism";
   static const loginOrganismScreen = "/logintOrganism";
+  static const cartListOrganismScreen = "/cartListOrganism";
 
   static const templatesScreen = "/templates";
   static const appWbarTemplateScreen = "/appwbar";
@@ -29,6 +31,7 @@ abstract class Navigation {
   static const tryAgainPageScreen = "/tryAgain";
   static const loadingPageScreen = "/loadingPage";
   static const pdpPageScreen = "/pdpPage";
+  static const cartPageScreen = "/cartPage";
 
 
   

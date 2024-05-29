@@ -5,6 +5,9 @@ abstract class SizeFoundation {
 
   static const circleNumbertAtomLengthBase = 10.0;
   static const circleNumbertextFontSize = SizesToken.s8x1;
+
+  static const qtyButtonAtomSpacerBorder = 8.0;
+  static const qtyButtonAtomSpacerInside = 1.0;
   
   static const basicTextButtonWidth = SizesToken.s25x4;
   static const basicTextButtonHeight = SizesToken.s25x2;
@@ -54,6 +57,13 @@ abstract class SizeFoundation {
   static const productMoleculeDescriptionMaxLines = 2;
   static const productMoleculePriceMaxLines = 1;
 
+  static const cartCounterMoleculeIconSize = 30.0;
+
+  static const cartItemMoleculeWidth =  SizesToken.s100x4;
+  static const cartItemMoleculeHeight =  SizesToken.s100x1;
+  static const cartItemMoleculeImageSize = SizesToken.s100x1;
+
+
   static const listProductOrganismWidth = SizesToken.s100x6;
   static const listProductOrganismSpacer = SizesToken.s8x1;
   static const listProductOrganismEdgeInset = SizesToken.s8x1;
@@ -69,7 +79,7 @@ abstract class SizeFoundation {
   static const listCategoriesOrganismWidth = SizesToken.s100x4;
   static const listCategoriesOrganismHeight = SizesToken.s25x2;
 
-  static const pdpPagePading = SizesToken.s100x1;
+  static const pdpPagePading = SizesToken.s8x1;
 
   static const pdpSpacer = SizesToken.s8x1;
 

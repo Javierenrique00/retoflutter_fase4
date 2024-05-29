@@ -11,6 +11,7 @@ class MoleculesScreen extends StatelessWidget {
     return ScreenTemplate(title: 'Molecules', nodes: [
       NodeModel(name: 'ProductMolecule', namedRoute: Navigation.productMoleculeScreen),
       NodeModel(name: 'CartCountertMolecule', namedRoute: Navigation.cartCounterMoleculeScreen),
+      NodeModel(name: 'Other molecules', namedRoute: Navigation.otherMoleculesScreen),
     ]);
   }
 }

@@ -13,6 +13,7 @@ class OrganismScreen extends StatelessWidget {
       NodeModel(name: 'ListProductsOrganism', namedRoute: Navigation.listProductOrganismScreen),
       NodeModel(name: 'RegisterOrganism', namedRoute: Navigation.registerOrganismScreen),
       NodeModel(name: 'LoginOrganism', namedRoute: Navigation.loginOrganismScreen),
+       NodeModel(name: 'CartListOrganism', namedRoute: Navigation.cartListOrganismScreen),
 
     ]);
   }

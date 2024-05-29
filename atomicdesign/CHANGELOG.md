@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.8.0
+
+New components for cart list
+
+- QtyButtonAtom
+- CartItemrMolecule
+- CartListOrganism
+- CartPage
+
 ## 1.7.0
 
 New components for cart app bar indicator

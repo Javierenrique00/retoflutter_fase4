@@ -8,14 +8,14 @@ class AppWbarTemplate extends StatelessWidget {
   final String title;
   final Widget child;
   final String counter;
-  final Function ()onCLickCounter;
+  final Function () onCLickCounter;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        actions: [CartCounterMolecule(counter: counter, onClick: onCLickCounter),const SizedBox(width: SizeFoundation.appWbarTemplateCartSpacer,)],
+        actions: [CartCounterMolecule(counter: counter, onClick:() => onCLickCounter(),),const SizedBox(width: SizeFoundation.appWbarTemplateCartSpacer,)],
         backgroundColor: ColorsFoundation.basicAppbarBackgroundColor,
       ),
       body: child,

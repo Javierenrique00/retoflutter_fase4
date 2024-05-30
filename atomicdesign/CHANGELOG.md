@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.2
+
+Fix on Click cart on component AppWbarTemplate
+
 ## 1.8.1
 
 AddTo for PDP page enabled.

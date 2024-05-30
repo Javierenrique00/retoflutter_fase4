@@ -9,6 +9,6 @@ class PdpPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final detail = PdpUiModel(id: 1, title: 'Cebolla roja', price: '12.850', description: 'Cebolla roja traida de los campos de Colombia.', category: 'Mercado', image: 'https://picsum.photos/id/292/300/200');
-    return PageTemplate(title: 'PDP', widget: PdpPage(detail: detail));
+    return PageTemplate(title: 'PDP', widget: PdpPage(detail: detail, addToCart: (int id) {  },));
   }
 }

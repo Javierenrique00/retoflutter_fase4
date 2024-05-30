@@ -32,6 +32,7 @@ abstract class Navigation {
   static const loadingPageScreen = "/loadingPage";
   static const pdpPageScreen = "/pdpPage";
   static const cartPageScreen = "/cartPage";
+  static const searchPageScreen = "/searchPage";
 
 
   

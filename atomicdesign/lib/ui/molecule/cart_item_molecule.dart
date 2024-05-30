@@ -12,8 +12,8 @@ class CartItemMolecule extends StatelessWidget {
       super.key});
   final ProductUiModel product;
   final int qty;
-  final Function () clickOnMinus;
-  final Function () clickOnPlus;
+  final Function() clickOnMinus;
+  final Function() clickOnPlus;
 
   @override
   Widget build(BuildContext context) {
@@ -33,12 +33,15 @@ class CartItemMolecule extends StatelessWidget {
               ),
             ),
           ),
-          Text(product.name),
+          Text(
+            product.name,
+            maxLines: 2,
+          ),
           Text(product.price),
           QtyButtonAtom(
             qty: qty,
-            clickOnMinus:() => clickOnMinus(),
-            clickOnPlus:() => clickOnPlus(),
+            clickOnMinus: () => clickOnMinus(),
+            clickOnPlus: () => clickOnPlus(),
           ),
         ],
       ),

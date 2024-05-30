@@ -22,6 +22,7 @@ import 'package:example/ui/modules/pages/loading_page_screen.dart';
 import 'package:example/ui/modules/pages/pages_screen.dart';
 import 'package:example/ui/modules/pages/pdp_page_screen.dart';
 import 'package:example/ui/modules/pages/register_page_screen.dart';
+import 'package:example/ui/modules/pages/search_page_screen.dart';
 import 'package:example/ui/modules/pages/try_again_page_screen.dart';
 import 'package:example/ui/modules/template/app_wbar_template_screen.dart';
 import 'package:example/ui/modules/template/template_screen.dart';
@@ -64,6 +65,7 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.loadingPageScreen:(context) => const LoadingPageScreen(),
           Navigation.pdpPageScreen:(context) => const PdpPageScreen(),
           Navigation.cartPageScreen:(context) => const CartPageScreen(),
+          Navigation.searchPageScreen:(context) => const SearchPageScreen(),
 
         };
       }

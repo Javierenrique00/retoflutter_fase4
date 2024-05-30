@@ -79,7 +79,7 @@ abstract class SizeFoundation {
   static const listCategoriesOrganismWidth = SizesToken.s100x4;
   static const listCategoriesOrganismHeight = SizesToken.s25x2;
 
-  static const pdpPagePading = SizesToken.s8x1;
+  static const pdpPagePading = SizesToken.s8x2;
 
   static const pdpSpacer = SizesToken.s8x1;
 

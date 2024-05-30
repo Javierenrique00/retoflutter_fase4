@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.0
+
+New SearchPage component.
+
 ## 1.8.3
 
 Fix on Click cart on component AppWbarTemplate. Working.

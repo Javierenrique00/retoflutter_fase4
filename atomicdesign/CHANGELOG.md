@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.1
+
+AddTo for PDP page enabled.
+
 ## 1.8.0
 
 New components for cart list

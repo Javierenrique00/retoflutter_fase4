@@ -4,8 +4,9 @@ import 'package:atomicdesign/ui/organism/detail_organism.dart';
 import 'package:flutter/widgets.dart';
 
 class PdpPage extends StatelessWidget {
-  const PdpPage({required this.detail, super.key});
+  const PdpPage({required this.detail, required this.addToCart ,super.key});
   final PdpUiModel detail;
+  final Function (int id) addToCart;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class PdpPage extends StatelessWidget {
         padding: const EdgeInsets.all(SizeFoundation.pdpPagePading),
         child: DetailOrganism(
           detail: detail,
-          addToCart: () {},
+          addToCart:(id) => addToCart(id),
         ),
       ),
     );

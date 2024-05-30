@@ -9,7 +9,7 @@ import 'package:flutter/widgets.dart';
 
 class DetailOrganism extends StatelessWidget {
   const DetailOrganism({required this.detail, required this.addToCart , super.key});
-  final Function () addToCart;
+  final Function (int id) addToCart;
   final PdpUiModel detail;
 
   @override
@@ -66,7 +66,7 @@ class DetailOrganism extends StatelessWidget {
         ),
         TextButtonAtom(
             textButton: 'Add to cart',
-            onPressedButton: () => null,
+            onPressedButton: () => addToCart(detail.id),
           )
       ],
     );

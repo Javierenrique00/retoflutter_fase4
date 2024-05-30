@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.3
+
+Fix on Click cart on component AppWbarTemplate. Working.
+
 ## 1.8.2
 
 Fix on Click cart on component AppWbarTemplate

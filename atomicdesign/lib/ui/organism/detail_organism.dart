@@ -8,8 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class DetailOrganism extends StatelessWidget {
-  const DetailOrganism({required this.detail, required this.addToCart , super.key});
-  final Function (int id) addToCart;
+  const DetailOrganism(
+      {required this.detail, required this.addToCart, super.key});
+  final Function(int id) addToCart;
   final PdpUiModel detail;
 
   @override
@@ -17,16 +18,11 @@ class DetailOrganism extends StatelessWidget {
     return ListView(
       scrollDirection: Axis.vertical,
       children: [
-        SizedBox(
-          width: SizeFoundation.pdpWidth,
-          child: FittedBox(
-            fit: BoxFit.contain,
-            child: Image.network(detail.image),
-          ),
+        FittedBox(
+          fit: BoxFit.contain,
+          child: Image.network(detail.image),
         ),
         Container(
-          width: SizeFoundation.pdpWidth,
-          //height: SizeFoundation.pdpWidth,
           alignment: Alignment.topLeft,
           child: Text(
             maxLines: SizeFoundation.pdpTitleLines,
@@ -37,8 +33,6 @@ class DetailOrganism extends StatelessWidget {
           ),
         ),
         Container(
-          width: SizeFoundation.pdpWidth,
-          //height: SizeFoundation.pdpWidth,
           alignment: Alignment.topLeft,
           child: Text(
             maxLines: SizeFoundation.pdpTitleLines,
@@ -49,8 +43,6 @@ class DetailOrganism extends StatelessWidget {
           ),
         ),
         Container(
-          width: SizeFoundation.pdpWidth,
-          //height: SizeFoundation.pdpWidth,
           alignment: Alignment.topLeft,
           child: Text(
             maxLines: SizeFoundation.pdpTitleLines,
@@ -65,9 +57,9 @@ class DetailOrganism extends StatelessWidget {
           height: SizeFoundation.pdpSpacer,
         ),
         TextButtonAtom(
-            textButton: 'Add to cart',
-            onPressedButton: () => addToCart(detail.id),
-          )
+          textButton: 'Add to cart',
+          onPressedButton: () => addToCart(detail.id),
+        )
       ],
     );
   }

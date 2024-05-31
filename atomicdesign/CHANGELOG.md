@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0
+
+New LobbyPage Component.
+
 ## 1.9.0
 
 New SearchPage component.

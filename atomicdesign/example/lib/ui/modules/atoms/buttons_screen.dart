@@ -1,6 +1,8 @@
+import 'package:atomicdesign/ui/atom/clothes_svg_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_wo_background_atom.dart';
 import 'package:atomicdesign/ui/atom/text_button_wo_short_atom.dart';
+import 'package:atomicdesign/ui/atom/text_button_wo_short_image_atom.dart';
 import 'package:example/ui/common/page_template.dart';
 import 'package:example/ui/common/vertical_div_widget.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +12,7 @@ class ButtonsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return PageTemplate(
       title: 'Buttons',
       widget: Container(
@@ -35,6 +38,13 @@ class ButtonsScreen extends StatelessWidget {
             TextButtonWoShortAtom(
                 idButton: 1,
                 textButton: 'TextButtonWoShortAtom',
+                onClick: (idButton) {},
+              ),
+            const VerticalDivWidget(),
+            TextButtonWoShortImageAtom(
+                idButton: 1,
+                textButton: 'TextButtonWoShortImageAtom',
+                imageWidget: const ClothesSvgAtom(),
                 onClick: (idButton) {},
               ),
           ],

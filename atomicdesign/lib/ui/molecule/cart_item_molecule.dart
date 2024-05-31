@@ -33,15 +33,22 @@ class CartItemMolecule extends StatelessWidget {
               ),
             ),
           ),
-          Text(
-            product.name,
-            maxLines: 2,
-          ),
-          Text(product.price),
-          QtyButtonAtom(
-            qty: qty,
-            clickOnMinus: () => clickOnMinus(),
-            clickOnPlus: () => clickOnPlus(),
+          Expanded(
+            child: Column(children: [
+              Text(
+              product.name,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+            Text(product.price),
+            QtyButtonAtom(
+              qty: qty,
+              clickOnMinus: () => clickOnMinus(),
+              clickOnPlus: () => clickOnPlus(),
+            )
+            ],),
+            ],)
           ),
         ],
       ),

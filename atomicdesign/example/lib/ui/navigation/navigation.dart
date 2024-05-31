@@ -19,6 +19,7 @@ abstract class Navigation {
   static const listProductOrganismScreen = "/listProductOrganism";
   static const registerOrganismScreen = "/registerOrganism";
   static const loginOrganismScreen = "/logintOrganism";
+  static const detailOrganismScreen = "/ditailOrganism";
   static const cartListOrganismScreen = "/cartListOrganism";
 
   static const templatesScreen = "/templates";
@@ -33,6 +34,7 @@ abstract class Navigation {
   static const pdpPageScreen = "/pdpPage";
   static const cartPageScreen = "/cartPage";
   static const searchPageScreen = "/searchPage";
+  static const lobbyPageScreen = "/lobbyPage";
 
 
   

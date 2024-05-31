@@ -9,7 +9,7 @@ class CartPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final product1 = ProductUiModel(id: 1, urlImage: 'https://picsum.photos/id/292/200/300', name: 'Product1', price: '1.850');
+    final product1 = ProductUiModel(id: 1, urlImage: 'https://picsum.photos/id/292/200/300', name: 'Product1 con mucho texto porque lo que se dice, tiene mucha información y ver como se comporta', price: '1.850');
     final product2 = ProductUiModel(id: 2, urlImage: 'https://picsum.photos/id/292/200/300', name: 'Product2', price: '2.850');
     final product3 = ProductUiModel(id: 3, urlImage: 'https://picsum.photos/id/292/200/300', name: 'Product3', price: '3.850');
 

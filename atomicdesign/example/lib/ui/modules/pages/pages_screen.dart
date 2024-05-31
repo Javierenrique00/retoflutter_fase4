@@ -17,6 +17,7 @@ class PagesScreen extends StatelessWidget {
       NodeModel(name: 'PdpPage', namedRoute: Navigation.pdpPageScreen),
       NodeModel(name: 'CartPage', namedRoute: Navigation.cartPageScreen),
       NodeModel(name: 'SearchPage', namedRoute: Navigation.searchPageScreen),
+      NodeModel(name: 'LobbyPage', namedRoute: Navigation.lobbyPageScreen),
 
     ]);
   }

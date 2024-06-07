@@ -15,6 +15,7 @@ import 'package:example/ui/modules/organisms/list_category_organism_screen.dart'
 import 'package:example/ui/modules/organisms/list_product_organism_screen.dart';
 import 'package:example/ui/modules/organisms/login_organism_screen.dart';
 import 'package:example/ui/modules/organisms/organism_screen.dart';
+import 'package:example/ui/modules/organisms/promotion_list_organism_screen.dart';
 import 'package:example/ui/modules/organisms/register_organism_screen.dart';
 import 'package:example/ui/modules/pages/cart_page_screen.dart';
 import 'package:example/ui/modules/pages/initial_page_screen.dart';
@@ -56,6 +57,7 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.loginOrganismScreen:(context) => const LoginOrganismScreen(),
           Navigation.detailOrganismScreen:(context) => const DetailOrganismScreen(),
           Navigation.cartListOrganismScreen:(context) => const CartListOrganismScreen(),
+          Navigation.promotionListOrganismScreen:(context) => const PromotionListOrganismScreen(),
 
           Navigation.templatesScreen :(context) => const TemplateScreen(),
           Navigation.appWbarTemplateScreen :(context) => const AppWbarTemplateScreen(),

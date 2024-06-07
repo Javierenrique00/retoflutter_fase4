@@ -18,10 +18,7 @@ class DetailOrganism extends StatelessWidget {
     return ListView(
       scrollDirection: Axis.vertical,
       children: [
-        FittedBox(
-          fit: BoxFit.contain,
-          child: Image.network(detail.image),
-        ),
+        Image.network(detail.image,fit: BoxFit.contain,),
         Container(
           alignment: Alignment.topLeft,
           child: Text(

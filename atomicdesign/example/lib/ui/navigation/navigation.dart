@@ -21,6 +21,7 @@ abstract class Navigation {
   static const loginOrganismScreen = "/logintOrganism";
   static const detailOrganismScreen = "/ditailOrganism";
   static const cartListOrganismScreen = "/cartListOrganism";
+  static const promotionListOrganismScreen = "/promotionListOrganism";
 
   static const templatesScreen = "/templates";
   static const appWbarTemplateScreen = "/appwbar";

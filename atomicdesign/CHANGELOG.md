@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+New Promotion component for lobby with discount flag.
+
 ## 2.0.0
 
 New LobbyPage Component.

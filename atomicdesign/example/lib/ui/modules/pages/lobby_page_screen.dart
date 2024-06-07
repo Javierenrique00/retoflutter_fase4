@@ -24,7 +24,7 @@ class LobbyPageScreen extends StatelessWidget {
       widget: LobbyPage(
         categoriesNames: const ['Categories', 'Search'],
         categoriesWidgets: const [ClothesSvgAtom(), Icon(Icons.search)],
-        onClickCategories: (id) {}, promotionItems: promotions, onClickPromotion: (int index) {  },
+        onClickCategories: (id) {}, promotionItems: promotions, onClickPromotion: (int index) { },
       ),
     );
   }

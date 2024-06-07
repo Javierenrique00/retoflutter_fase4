@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.1
+
+Fix width of promotion discount. Fix click on discount item.
+
 ## 2.1.0
 
 New Promotion component for lobby with discount flag.

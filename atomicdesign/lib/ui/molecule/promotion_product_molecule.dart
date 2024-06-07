@@ -24,7 +24,7 @@ class PromotionProductMolecule extends StatelessWidget {
             fit: BoxFit.contain,
             child: Card(
               child: InkWell(
-                onTap: () => onclick,
+                onTap: () => onclick(),
                 child: imageWidget,
               ),
             ),

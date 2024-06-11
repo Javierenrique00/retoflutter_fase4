@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1
+
+Fix size od PromotionsMolecule and cartCounterMolecule.
+
 ## 2.2.0
 
 Added Big promotion components. Fix Register card.

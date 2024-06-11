@@ -4,12 +4,14 @@ import 'package:atomicdesign/ui/token/sizes_token.dart';
 abstract class SizeFoundation {
 
   static const circleNumbertAtomLengthBase = 14.0;
-  static const circleNumbertextFontSize = 10.0;
+  static const circleNumbertextFontSize = 9.0;
 
   static const flagNumbertextFontSize = 16.0;
   static const flagBorder = 10.0;
-  static const flagWidth = 55.0;
-  static const flagHeight = 25.0;
+  static const flagWidth = SizesToken.s100x1;
+  static const flagHeight = SizesToken.s25x2;
+  static const flagHorizInset = 5.0;
+  static const flagVertInset = 2.0;
 
   static const bigFlagNumbertextFontSize = 25.0;
   static const bigFlagBorder = 14.0;

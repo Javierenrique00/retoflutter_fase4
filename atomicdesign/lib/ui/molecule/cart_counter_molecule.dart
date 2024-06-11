@@ -13,7 +13,7 @@ class CartCounterMolecule extends StatelessWidget {
     return Stack(
       children: [
         IconButton(onPressed:() => onClick(), icon: const Icon(size: SizeFoundation.cartCounterMoleculeIconSize, Icons.shopping_cart)) ,
-        if (counter.isNotEmpty) Positioned(top: 10,left: 10, child: CircleNumberAtom(number: counter),),
+        if (counter.isNotEmpty) Positioned(top: 7,left: 10, child: CircleNumberAtom(number: counter),),
       ],
     );
   }

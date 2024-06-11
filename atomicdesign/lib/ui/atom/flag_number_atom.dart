@@ -9,23 +9,26 @@ class FlagNumberAtom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-              width: SizeFoundation.flagWidth,
-              height: SizeFoundation.flagHeight,
-              decoration: const BoxDecoration(
-                color: ColorsFoundation.flagNumberBackground,
-                borderRadius: BorderRadius.all(Radius.circular(SizeFoundation.flagBorder)),
-
-              ),
-              child: Center(
-                child: Text(
-                  discount,
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.background,
-                    fontSize: SizeFoundation.flagNumbertextFontSize,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ),
-            );
+      constraints: const BoxConstraints(
+          maxWidth: SizeFoundation.flagWidth,
+          maxHeight: SizeFoundation.flagHeight),
+      padding: const EdgeInsets.symmetric(
+          horizontal: SizeFoundation.flagHorizInset,
+          vertical: SizeFoundation.flagVertInset),
+      decoration: const BoxDecoration(
+        color: ColorsFoundation.flagNumberBackground,
+        borderRadius:
+            BorderRadius.all(Radius.circular(SizeFoundation.flagBorder)),
+      ),
+      child: Text(
+        discount,
+        softWrap: true,
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.background,
+          fontSize: SizeFoundation.flagNumbertextFontSize,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
+    );
   }
 }

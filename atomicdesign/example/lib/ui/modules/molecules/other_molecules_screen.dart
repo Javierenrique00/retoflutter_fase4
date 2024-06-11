@@ -1,5 +1,6 @@
 import 'package:atomicdesign/domain/model/product_ui_model.dart';
 import 'package:atomicdesign/ui/foundation/size_foundation.dart';
+import 'package:atomicdesign/ui/molecule/big_promotion_product_molecule.dart';
 import 'package:atomicdesign/ui/molecule/cart_item_molecule.dart';
 import 'package:atomicdesign/ui/molecule/promotion_product_molecule.dart';
 import 'package:example/ui/common/page_template.dart';
@@ -20,7 +21,13 @@ class OtherMoleculesScreen extends StatelessWidget {
 
       const Text('PromotionProductMolecule'),
       const SizedBox(height: SizeFoundation.basicSpacer,),
-      PromotionProductMolecule(imageWidget: const Icon(Icons.ac_unit_rounded), discountStr: '15%', onclick:(){},)
+      PromotionProductMolecule(imageWidget: const Icon(Icons.ac_unit_rounded), discountStr: '15%', onclick:(){},),
+      const VerticalDivWidget(),
+
+      const Text('BigPromotionProductMolecule'),
+      const SizedBox(height: SizeFoundation.basicSpacer,),
+      BigPromotionProductMolecule(imageWidget: Image.network('https://picsum.photos/id/292/300/300'), bannerStr: 'Banner !!', onclick:() {},),
+      const VerticalDivWidget(),
     ],));
   }
 }

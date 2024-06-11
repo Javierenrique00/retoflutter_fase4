@@ -9,6 +9,7 @@ import 'package:example/ui/modules/molecules/molecules_screen.dart';
 import 'package:example/ui/modules/molecules/other_molecules_screen.dart';
 import 'package:example/ui/modules/molecules/product_molecule_screen.dart';
 import 'package:example/ui/modules/molecules/shopping_cart_screen.dart';
+import 'package:example/ui/modules/organisms/big_promotion_list_organism_screen.dart';
 import 'package:example/ui/modules/organisms/cart_list_organism_screen.dart';
 import 'package:example/ui/modules/organisms/detail_organism_screen.dart';
 import 'package:example/ui/modules/organisms/list_category_organism_screen.dart';
@@ -58,6 +59,7 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.detailOrganismScreen:(context) => const DetailOrganismScreen(),
           Navigation.cartListOrganismScreen:(context) => const CartListOrganismScreen(),
           Navigation.promotionListOrganismScreen:(context) => const PromotionListOrganismScreen(),
+          Navigation.bigPromotionListOrganismScreen:(context) => const BigPromotionListOrganismScreen(),
 
           Navigation.templatesScreen :(context) => const TemplateScreen(),
           Navigation.appWbarTemplateScreen :(context) => const AppWbarTemplateScreen(),

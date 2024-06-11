@@ -18,5 +18,7 @@ abstract class ColorsFoundation {
 
   static const flagNumberBackground = ColorsToken.red3;
 
+  static const bigFlagNumberBackground = ColorsToken.black02;
+
 
 }

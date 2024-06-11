@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0
+
+Added Big promotion components. Fix Register card.
+
 ## 2.1.1
 
 Fix width of promotion discount. Fix click on discount item.

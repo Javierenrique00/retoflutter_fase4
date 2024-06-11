@@ -8,8 +8,16 @@ abstract class SizeFoundation {
 
   static const flagNumbertextFontSize = 16.0;
   static const flagBorder = 10.0;
-   static const flagWidth = 55.0;
+  static const flagWidth = 55.0;
   static const flagHeight = 25.0;
+
+  static const bigFlagNumbertextFontSize = 25.0;
+  static const bigFlagBorder = 14.0;
+  static const bigFlagWidth = SizesToken.s100x4;
+  static const bigFlagHeight = SizesToken.s25x3;
+  static const bigFlagHorizInset = SizesToken.s25x1;
+  static const bigFlagVertInset = 5.0;
+
   
   static const qtyButtonAtomSpacerBorder = 8.0;
   static const qtyButtonAtomSpacerInside = 1.0;
@@ -97,5 +105,7 @@ abstract class SizeFoundation {
   static const textButtonWoShortImageAtomImageSize = SizesToken.s25x2;
 
   static const promotionProductMoleculeSize = SizesToken.s25x3;
+
+  static const bigPromotionProductMoleculeSize = SizesToken.s25x5;
 
 }

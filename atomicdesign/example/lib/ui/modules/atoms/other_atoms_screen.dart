@@ -1,4 +1,5 @@
 import 'package:atomicdesign/ui/atom/circle_number_atom.dart';
+import 'package:atomicdesign/ui/atom/flag_big_promotion_atom.dart';
 import 'package:atomicdesign/ui/atom/flag_number_atom.dart';
 import 'package:atomicdesign/ui/atom/qty_button_atom.dart';
 import 'package:atomicdesign/ui/foundation/size_foundation.dart';
@@ -32,6 +33,12 @@ class OtherAtomsScreen extends StatelessWidget {
               height: SizeFoundation.basicSpacer,
             ),
             const FlagNumberAtom(discount: '25%'),
+            const VerticalDivWidget(),
+            const Text('FlagBigPromotionAtom'),
+            const SizedBox(
+              height: SizeFoundation.basicSpacer,
+            ),
+            const FlagBigPromotionAtom(bannerStr: 'Womens OutFit'),
             const VerticalDivWidget(),
           ],
         ));

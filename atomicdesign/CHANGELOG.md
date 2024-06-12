@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.1
+
+Help page with centered text.
+
 ## 2.3.0
 
 New HelpPage.

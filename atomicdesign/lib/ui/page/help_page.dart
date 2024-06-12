@@ -14,11 +14,11 @@ class HelpPage extends StatelessWidget {
     return ListView( children: [
       Text(helpTitle,textAlign: TextAlign.center,style: Theme.of(context).textTheme.headlineMedium,),
       const SizedBox(height: 12,),
-      Text(helpMsg,style: Theme.of(context).textTheme.bodyMedium,),
+      Text(helpMsg,textAlign: TextAlign.center,style: Theme.of(context).textTheme.bodyMedium,),
       const VerticalDivAtom(),
       Text(contactTitle,textAlign: TextAlign.center,style: Theme.of(context).textTheme.headlineMedium,),
       const SizedBox(height: 12,),
-      Text(contactMsg,style: Theme.of(context).textTheme.bodyMedium,),
+      Text(contactMsg,textAlign: TextAlign.center,style: Theme.of(context).textTheme.bodyMedium,),
       const VerticalDivAtom(),
 
     ],);

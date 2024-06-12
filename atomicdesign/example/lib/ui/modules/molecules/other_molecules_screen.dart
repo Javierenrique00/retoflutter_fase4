@@ -21,7 +21,7 @@ class OtherMoleculesScreen extends StatelessWidget {
 
       const Text('PromotionProductMolecule'),
       const SizedBox(height: SizeFoundation.basicSpacer,),
-      PromotionProductMolecule(imageWidget: const Icon(Icons.ac_unit_rounded), discountStr: '15%', onclick:(){},),
+      PromotionProductMolecule(imageWidget: const Icon(Icons.ac_unit_rounded), discountStr: '99.99%', onclick:(){},),
       const VerticalDivWidget(),
 
       const Text('BigPromotionProductMolecule'),

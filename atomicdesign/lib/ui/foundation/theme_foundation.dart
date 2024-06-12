@@ -57,4 +57,3 @@ final textButtonWithoutBackgroundShortTheme = TextButtonThemeData(
         MaterialStateProperty.all(ColorsFoundation.basicWoButtonText),
   ),
 );
-

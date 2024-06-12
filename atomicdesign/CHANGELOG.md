@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.0
+
+New HelpPage.
+
 ## 2.2.1
 
 Fix size od PromotionsMolecule and cartCounterMolecule.

@@ -22,18 +22,21 @@ class OtherAtomsScreen extends StatelessWidget {
             ),
             const CircleNumberAtom(number: '25'),
             const VerticalDivWidget(),
+
             const Text('QtyButtonAtom'),
             const SizedBox(
               height: SizeFoundation.basicSpacer,
             ),
             QtyButtonAtom(qty: 3, clickOnMinus: (){}, clickOnPlus: (){}),
             const VerticalDivWidget(),
+
             const Text('FlagNumberAtom'),
                         const SizedBox(
               height: SizeFoundation.basicSpacer,
             ),
             const FlagNumberAtom(discount: '25%'),
             const VerticalDivWidget(),
+
             const Text('FlagBigPromotionAtom'),
             const SizedBox(
               height: SizeFoundation.basicSpacer,

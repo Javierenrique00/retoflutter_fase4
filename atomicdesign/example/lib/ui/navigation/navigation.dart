@@ -37,6 +37,7 @@ abstract class Navigation {
   static const cartPageScreen = "/cartPage";
   static const searchPageScreen = "/searchPage";
   static const lobbyPageScreen = "/lobbyPage";
+  static const helpPageScreen = "/helpPage";
 
 
   

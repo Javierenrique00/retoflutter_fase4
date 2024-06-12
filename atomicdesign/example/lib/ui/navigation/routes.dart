@@ -19,6 +19,7 @@ import 'package:example/ui/modules/organisms/organism_screen.dart';
 import 'package:example/ui/modules/organisms/promotion_list_organism_screen.dart';
 import 'package:example/ui/modules/organisms/register_organism_screen.dart';
 import 'package:example/ui/modules/pages/cart_page_screen.dart';
+import 'package:example/ui/modules/pages/help_pag_screen.dart';
 import 'package:example/ui/modules/pages/initial_page_screen.dart';
 import 'package:example/ui/modules/pages/list_product_page_screen.dart';
 import 'package:example/ui/modules/pages/loading_page_screen.dart';
@@ -64,8 +65,8 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.templatesScreen :(context) => const TemplateScreen(),
           Navigation.appWbarTemplateScreen :(context) => const AppWbarTemplateScreen(),
           
-          Navigation.initialPageScreen:(context) => const InitialPageScreen(),
           Navigation.pagesScreen:(context) => const PagesScreen(),
+          Navigation.initialPageScreen:(context) => const InitialPageScreen(),
           Navigation.listProductPageScreen:(context) => const ListProductPageScreen(),
           Navigation.registerPageScreen:(context) => const RegisterPageScreen(),
           Navigation.tryAgainPageScreen:(context) => const TryAgainPageScreen(),
@@ -74,6 +75,7 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
           Navigation.cartPageScreen:(context) => const CartPageScreen(),
           Navigation.searchPageScreen:(context) => const SearchPageScreen(),
           Navigation.lobbyPageScreen:(context) => const LobbyPageScreen(),
+          Navigation.helpPageScreen:(context) => const HelpPageScreen(),
 
         };
       }
